@@ -12,6 +12,7 @@ public class ScanOnlyTextField extends JFrame {
         // 添加键盘事件监听器
         textField.addKeyListener(new KeyAdapter() {
             @Override
+            @Override
             public void keyTyped(KeyEvent e) {
                 // 如果正在扫描，允许输入
                 if (isScanning) {
